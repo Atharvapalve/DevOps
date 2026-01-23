@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atharva Palve | ML Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary-glow: #6366f1;
+            --secondary-glow: #a855f7;
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+            color: #f1f5f9;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .profile-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .profile-header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 22% 78% 70% 30% / 30% 30% 70% 70%; /* Organic shape */
+            border: 3px solid var(--primary-glow);
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .profile-header img:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        .profile-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #fff, var(--secondary-glow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .profile-header p {
+            margin-top: 5px;
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 300;
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        section h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            color: var(--primary-glow);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        section h2::after {
+            content: "";
+            height: 1px;
+            background: linear-gradient(to right, var(--primary-glow), transparent);
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills-grid span {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #c7d2fe;
+            padding: 6px 16px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .skills-grid span:hover {
+            background: var(--primary-glow);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: var(--secondary-glow);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            .profile-header {
+                text-align: center;
+                flex-direction: column;
+            }
+            .contact-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-card">
+
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Atharva Palve">
+            <div>
+                <h1>Atharva Palve</h1>
+                <p>AI & Machine Learning Researcher | Data Scientist</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated Machine Learning enthusiast focused on building intelligent systems that solve real-world problems. My interests lie in **Neural Networks, Natural Language Processing, and Computer Vision**. I thrive on turning complex datasets into actionable insights.
+            </p>
+        </section>
+
+        <section>
+            <h2>Expertise</h2>
+            <div class="skills-grid">
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>Python (PyTorch/TensorFlow)</span>
+                <span>Data Visualization</span>
+                <span>Computer Vision</span>
+                <span>NLP</span>
+                <span>SQL & NoSQL</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>
+                <strong>Bachelor of Technology</strong><br>
+                Major in Artificial Intelligence & Machine Learning<br>
+                <span style="color: #94a3b8;">Expected Graduation: 2027</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Connect</h2>
+            <div class="contact-links">
+                <a href="mailto:atharva.palve@example.com">Email</a>
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 Atharva Palve • Built with Passion for AI
+    </footer>
+</div>
+
+</body>
+</html>
